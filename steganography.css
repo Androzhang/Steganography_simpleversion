@@ -1,0 +1,16 @@
+body {
+    background-color: azure;
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+}
+
+canvas {
+    height: 200px;
+    border: 1px solid lightgray;
+}
+
+.tl {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}

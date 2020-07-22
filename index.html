@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography</title>
+    <link href="steganography.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="c1"></canvas>
+    <canvas id="c2"></canvas>
+    <canvas id="c3"></canvas>
+    <p>Surface image:
+        <input type="file" multiple="false" accept="image/*" id="show" onchange="loadimg('show','c1');">
+    </p>
+    <p>Hidden image:
+        <input type="file" multiple="false" accept="image/*" id="hide" onchange="loadimg('hide','c2')">
+    </p>
+
+    <p class="tl">Steganography</p>
+    <input type="button" value="Create composite" onclick="createCmp()">
+    <p class="tl">Reset image</p>
+    <input type="button" value="Clear Canvas" onclick="clearCvs('c1'),clearCvs('c2'),clearCvs('c3')">
+
+    <script src="steganography.js"></script>
+    <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>    
+</body>
+</html>
+
+
